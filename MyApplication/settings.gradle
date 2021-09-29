@@ -1,0 +1,2 @@
+include ':app', ':myshopingcart'
+rootProject.name='My Application'

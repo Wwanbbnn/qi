@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的购物车"/>
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去逛逛"
+        android:layout_below="@id/ziti2"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/emoji"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/kuqi"/>
+    <ImageView
+        android:id="@+id/shoppingcart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/che"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/ziti1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购物车快饿扁了T.T"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@id/emoji"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/ziti2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主人快点给我挑点宝贝吧"
+        android:textColor="#D3D3D3"
+        android:textSize="15sp"
+        android:layout_below="@id/ziti1"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
